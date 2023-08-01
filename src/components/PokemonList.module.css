@@ -1,0 +1,52 @@
+.logo {
+font-family: 'Carter One', cursive;
+  font-size: max(5vw, 5rem);
+  color: #ffcb05;
+  text-align: center;
+  -webkit-text-stroke: 2px #3b5ca8;
+  text-shadow: 5px 5px 5px #1d2c5e;
+  margin-bottom: 0;
+}
+.box {
+  display: flex;
+  flex-direction: row;
+
+  /*justify-content: space-around;*/
+}
+.right_box {
+  padding: 20px;
+  width: 60%;
+  margin: 0 2rem;
+}
+
+.list {
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr);*/
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+}
+
+/*@media (max-width: 1024px) {
+  .list {
+    grid-template-columns: repeat(2, 0.8fr);
+  }
+}*/
+@media (max-width: 768px) {
+  .right_box {
+    width: 90%;
+    justify-content: center;
+  }
+  .info_box {
+    position: fixed;
+
+    bottom: 0;
+    right: 20px;
+    left: 50px;
+    background-color: rgb(223, 250, 253);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
